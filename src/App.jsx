@@ -8,7 +8,7 @@ function App() {
   return (
     <Container>
       <Poem>
-        <Grid width={width}></Grid>
+        <Grid width={width} />
         <h1>Let everything happen to you.</h1>
         <h1>Beauty and terror.</h1>
         <h1>Just keep going.</h1>

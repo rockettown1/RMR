@@ -1,10 +1,13 @@
 {
   "name": "poem",
   "version": "0.0.0",
+  "homepage": "https://rockettown1.github.io/RMR",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -14,7 +17,7 @@
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
     "@vitejs/plugin-react": "^1.0.7",
-    "ghpages": "0.0.10",
+    "gh-pages": "^3.2.3",
     "jest": "^27.4.7",
     "vite": "^2.7.2"
   }
