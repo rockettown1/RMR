@@ -24,7 +24,7 @@ export default function Grid({ width }) {
           key={i}
           animate={a === 1}
           width={width}
-          onClick={() => {
+          onMouseOver={() => {
             runAnimate(i);
           }}
           onAnimationEnd={() => setAnimate(!animate)}
