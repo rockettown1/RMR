@@ -7,7 +7,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test": "jest",
+    "test:watch": "jest --watchAll --verbose"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -15,10 +17,21 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "@vitejs/plugin-react": "^1.0.7",
     "gh-pages": "^3.2.3",
     "jest": "^27.4.7",
+    "jest-styled-components": "^7.0.8",
     "vite": "^2.7.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.js"
+    ]
   }
 }

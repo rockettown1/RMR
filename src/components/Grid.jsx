@@ -22,6 +22,8 @@ export default function Grid({ width }) {
       {grid.map((a, i) => (
         <Pixel
           key={i}
+          role="pixel"
+          data-testid={`pixel${i}`}
           animate={a === 1}
           width={width}
           onMouseOver={() => {
